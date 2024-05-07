@@ -1,0 +1,28 @@
+.exp_container{
+    background-color: aliceblue;
+    padding-top: 0.5cm;
+    padding-left: 1cm;
+    padding-right: 1cm;
+    height: 13cm;
+}
+.exp_grid{
+    padding-top: 20px;
+    padding-left: 320px;
+    padding-right: 370px;
+    padding-bottom: 20px;
+}
+.exp_heading{
+    text-align: center;
+}
+@media only screen and (max-width: 1300px ) {
+    .exp_container {
+        padding-top: 0.5cm;
+    padding-left: 1cm;
+    padding-right: 1cm;
+        height: auto; /* Adjust height as needed for smaller screens */
+    }
+
+    .exp_grid {
+        padding: 20px; /* Adjust padding as needed for smaller screens */
+    }
+}

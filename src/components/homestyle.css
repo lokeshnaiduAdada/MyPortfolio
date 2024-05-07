@@ -1,0 +1,114 @@
+.home-grid {
+    background-color: aliceblue;
+    padding-left: 1cm;
+    padding-right: 1cm;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    height: 14.5cm;
+    border-radius: 10px;
+}
+
+.home {
+    padding-left: 5cm;
+    padding-top: 2cm;
+    /* box-shadow: rgba(6, 252, 10, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px; */
+    height: 12cm;
+    border-radius: 10px;
+}
+
+.home-right {
+    position: absolute;
+    left: 28cm;
+    top: 4cm;
+    border-radius: 10px;
+    height: 15cm;
+}
+.hero_details{
+    gap: 0.5cm;
+    position: absolute;
+    top: 11cm;
+    left: 4.5cm;
+
+}
+.social_media_container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.social_media_items{
+    padding: 0.5cm;
+}
+.social_media>img{
+    gap: 5rem;
+    padding-left: 20px;
+}
+
+@media only screen and (max-width: 1450px) {
+    .home-grid {
+        padding-left: 1cm;
+        padding-right: 1cm;
+        padding-top: 10px;
+        height: 19cm;
+    }
+
+    .home {
+        padding-left: 3cm;
+        padding-top: 9cm;
+        /* box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px; */
+        height: 10cm;
+    }
+
+    .home-right {
+        position: flex; /* Change to relative positioning for smaller screens */
+        left: auto;
+        top: 3cm;
+        height: auto; /* Reset height */
+    }
+    .hero_details{
+        /* gap: 8px; */
+        position: relative;
+        top: 0.5cm;
+        left: 0cm;
+    }
+    .social_grid_container{
+        height: 6cm;
+        width: 11cm;
+        
+    }
+}
+@media only screen and (max-width: 500px) {
+    .home-grid {
+        background-color: aliceblue;
+        padding-left: 0.5cm;
+        padding-right: 0.5cm;
+        padding-top: 15px;
+        padding-bottom: 10px;
+        height: 19cm;
+        border-radius: 10px;
+    }
+    /* .home {
+        padding-left: 1cm;
+        padding-top: 2cm;
+        /* box-shadow: rgba(6, 252, 10, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px; */
+       /* height: 12cm;
+        border-radius: 10px;
+    } */
+    .home-right > img{
+        position: absolute;
+        left: -2cm;
+    }
+    .content{
+        width:120%;
+        position: absolute;
+        left: 1cm;
+    }
+    .social_media_items{
+        position: absolute;
+        top: 580px;
+        left: 1cm;
+    }
+    .hero_details{
+        position: absolute;
+        top: 700px;
+    }
+}
