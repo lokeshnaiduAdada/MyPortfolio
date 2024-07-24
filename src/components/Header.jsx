@@ -33,7 +33,7 @@ const Header=()=>{
                             <a href='/about' onClick={()=>scrollToSection('about_container')}>About</a>&nbsp;&nbsp;
                         </li>
                         <li>
-                            <a href='https://drive.google.com/file/d/1bQrrIbAgteK5D_qy6WeXTu7iFG9YujO_/view?usp=drive_link'>Resume</a>&nbsp;&nbsp;
+                            <a href='https://drive.google.com/file/d/1tzzAYX7_kDsdaryu_IPiZqu_tcAO4gAQ/view?usp=sharing'>Resume</a>&nbsp;&nbsp;
                         </li>
                         <li>
                             <a href='/Experience' onClick={()=>scrollToSection('exp_container')}>Experience</a>&nbsp;&nbsp;
