@@ -16,7 +16,7 @@ const Footer=()=>{
                 </div>
                 <div className='footer_social'>
                     <a href='mailto:adadalokesh7@gmail.com'><FaEnvelope/></a>
-                    <a href='https://www.linkedin.com/in/lokesh-adada-7709a3225?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app'><FaLinkedinIn/></a>
+                    <a href='https://www.linkedin.com/in/lokesh-adada/'><FaLinkedinIn/></a>
                     <a href='https://github.com/lokeshnaiduAdada'><FaGithub/></a>
                     <a href='https://www.facebook.com/lokesh.naidu.35325'><FaFacebook/></a>
                     <a href='https://www.instagram.com/___lokesh_naidu18__/?hl=en'><FaInstagram/></a>
