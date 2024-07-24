@@ -21,13 +21,14 @@
 
 ul {
     display: flex;
+    
     padding: 1rem 4rem;
     overflow-x: clip;
     list-style-type: none;
     font-weight: 800;
     position: absolute;
     top: 9px;
-    left: 25cm;
+    right: 0px;
 }
 
 li > a {
