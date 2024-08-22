@@ -105,14 +105,17 @@
        
     }
 }
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 420px) {
     .contact_right > form > div{
-        width: 250px;
+        width: 300px;
+    }
+    .contact_right > form > div > label{
+        width: 300px;
     }
     .contact_right > form > div >input{
-        width: 200px;
+        width: 280px;
     }
     .contact_right > form > div > textarea{
-        width: 200px;
+        width: 280px;
     }
 }
