@@ -1,136 +1,91 @@
 .Header-grid {
-    padding-left: 1cm;
-    padding-right: 1cm;
-    padding-top: 15px;
+    position: sticky;
+    backdrop-filter: blur(15px);
+    top: 0px;
+    padding: 15px;
+    justify-content: center;
 }
 
 .header {
     background-color: rgb(232 121 249);
-    padding: 1px;
+    padding: 10px;
     border-radius: 10px;
-    height: 2cm;
+    height: 55px;
+    display: flex;
+    justify-content: space-between;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
 
 .header_name {
     color: black;
-    width: 14%;
-    padding-top: 20px;
-    padding-left: 15px;
+    width: 20%;
+    padding: 5px;
+    text-align: center;
+    align-self: center;
 }
-
+.navbar_section{
+    width: 70%;
+    
+    padding: 5px;
+}
 ul {
     display: flex;
-    
-    padding: 1rem 4rem;
+    width: 95%;
+    margin-top: 0px;
+    gap: 10px;
     overflow-x: clip;
     list-style-type: none;
     font-weight: 800;
-    position: absolute;
-    top: 9px;
-    right: 0px;
+    justify-content: right;
+    align-items: center;
 }
 
 li > a {
     text-decoration: none;
-    color: rgb(0, 255, 17);
+    padding: 8px;
+    color: firebrick;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: min-content;
+    height: 40px;
 }
 .open_menu{
     display: none;
 }
 li > a:hover{
     color: yellow;
+    border-radius: 10px;
     background-color: black;
 }
 
 /* Media query for screens with a maximum width of 600px */
-@media only screen and (max-width: 1400px) {
-    .Header-grid {
-        padding-left: 1cm;
-        padding-right: 1cm;
-        padding-top: 15px;
-    }
-    .header_name{
-        padding-top: 10px;
-        width: 25%;
-    }
-    .header {
-        padding: 1pc;
-        height: 1cm;
-        display:flex;
-        justify-content: space-between;
-        
-    }
-
-    header > nav > ul {
-        display: flex;
-        justify-content:center;
-        margin: 0;
-        padding: 0;
-        width: max-content;
-        position: relative; 
-        left:10px;
-        top: 10px;
-        right: 0cm;
-        height: auto;
-        overflow: hidden;
-    }
-
-    li {
-        margin-left: 0.1rem;
-        margin-right: 0.1rem;
-    } 
+@media only screen and (max-width: 1200px) {
+    
       
 }
-@media only screen and (max-width:760px) {
+@media only screen and (max-width:800px) {
     .header_name{
-        display: contents;
-    }
-    .header > nav > ul{
-        
-        display: block;
-        /*text-align: center;
-        border-radius: 10px;
-        height: 150px;
-        background-color: coral;
-        position: ; */
-        flex-direction: column;
-        /* top: 4rem;
-        right: 2rem; */
-        padding: 2rem;
-        text-align: center;
-        background-color:orangered ;
-        box-shadow: #0136f5e4 0 2px 5px -1px, #0000004d 0 1px 3px -1px;
-        transition: all .3s ease-in-out;
-        border-radius: 5px;
-        z-index: 1;
-        width: fit-content;
-        position: relative;
-        top: 30px;
-        right: -20px;
-        left: -20px;
-        height: fit-content;
-    }
-    .header > nav > ul > li{
-        padding-bottom: 6px;
+        font-size: 15px;
+        text-align: left;
     }
     .open_menu{
-        display: inline;
-        position: absolute;
-        right: 60px;
-        top: 35px;
-        /* background-color: rgb(232 121 249); */
+        display: flex;
+        align-items: center;
+    }
+    .open{
+       background-color: aquamarine;
+       width: auto;
+        display: block;
+        border-radius: 20px;
+        transition: all 0.5s ease-in;
+        transform: translateY(5rem);
+    }
+    .close{
+        display: none;
         
     }
-    .header .open{
-        display: none;
-    }
-}
-@media only screen and (max-width:500px){
-    .open_menu > button{
-        width: fit-content;
-        position: relative;
-        left: 150px;
-
+    .open > li{
+        text-align: center;
     }
 }

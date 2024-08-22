@@ -1,19 +1,73 @@
-.project_container{
-    padding-top: 0.5cm;
-    padding-left: 1cm;
-    padding-right: 1cm;
-    padding-bottom: 0.3cm;
-    height: 12cm;
-}
 .project_grid{
-    padding-top: 10px;
-    padding-left: 290px;
-    padding-right: 360px;
-    padding-bottom: 100px;
-    height: 10cm;
+    height: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
-.project_heading{
+.project_section{
+    padding-left: 30ex;
+    padding-right: 30ex;
+}
+.project_content{
+    display: block;
+    padding: 15px;
+    box-sizing: border-box;
+    width: 100%;
+}
+.project_content >h2{
     text-align: center;
+    color:rgb(0, 121, 251);
+}
+.project_lists{
+    display: block;
+    padding: 10px;
+    width: 100%;
+}
+.project1{
+    display: flex;
+    padding-bottom: 30px;
+    gap: 10px;
+    width: 100%;
+    justify-content: space-between;
+}
+.project1_image > img{
+    width: 300px;
+    height: 190px; 
+}
+.project1_details{
+    width: 100%;
+    box-sizing: border-box;
+}
+.project1_details > h3{
+    margin-top: 0px;
+}
+.project1_details > p{
+    color: gray;
+    font-size:large;
+    font-weight: 500;
+    width: 100%;
+}
+.project2{
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    justify-content: space-between;
+}
+.project2_image > img{
+    width: 300px;
+    height: 190px;
+}
+.project2_details{
+    width: 100%;
+    box-sizing: border-box;
+}
+.project2_details > h3{
+    margin-top: 0px;
+}
+.project2_details > p{
+    color: gray;
+    font-size:large;
+    font-weight: 500;
+    width: 100%;
 }
 .project1 img {
     transition: 0.3s ease-in-out;
@@ -29,146 +83,58 @@
 .project1 img:hover {
     transform: scale(1.1);
 }
-.project_lists{
-    padding: 10px;
-    height: 10cm;
-    display: grid;
-}
-.project1_details > p{
-    color: gray;
-    font-size:large;
-    font-weight: 500;
-}
-.project1_details{
-    position: absolute;
-    top: 46.5cm;
-    left: 20cm;
-    right: 6cm;
-    box-sizing: border-box;
-}
 .social_media1 > button{
     height: 2.5rem;
     padding: 0.5rem;
 }
-.project2_details > p{
-    color: gray;
-    font-size:large;
-    font-weight: 500;
-}
-.project2_details{
-    position: absolute;
-    top: 51cm;
-    left: 20cm;
-    right: 6cm;
-    box-sizing: border-box;
-}
 .social_media2 > button{
-    height: 2.5rem;
-    padding: 0.5rem;
+    
 }
 @media screen and (max-width: 1300px) {
-    .project_container {
-        padding-top: 0.3cm;
-        padding-left: 1cm;
-        padding-right: 1cm;
-        height: 16cm;
+    .project_grid{
+        margin-top: 10px;
+        margin-bottom: 10px;
     }
-
-    .project_grid {
-        padding-top: 5px;
-        padding-left: 10px;
-        padding-right: 10px;
-        padding-bottom: 50px;
-        height: 15cm;
-    }
-
-    .project_heading {
-        font-size: 1.5em;
-    }
-    .project_lists{
-        padding: 10px;
-        height: 10cm;
-        display: grid;
-    }
-    .project1{
-        height: 5.5cm;
-    }
-    .project1_details {
-        width: auto;
-        position: absolute;
-        top: 45cm;
-        left: 12.5cm;
-    }
-    .social_media1 > button{
-        height: 2.5rem;
-        padding: 0.5rem;
-    }
-    .project2{
-        height: 5.5cm;
-    }
-    .project2_details {
-        width: auto;
-        position: absolute;
-        top: 50.5cm;
-        left: 12.5cm;
-    }
-    .social_media2 > button{
-        height: 2.5rem;
-        padding: 0.5rem;
+    .project_section{
+        padding-left: 15ex;
+        padding-right: 15ex;
     }
 }
-@media only screen and (max-width: 1100px) {
-    .project_container {
-        padding-top: 0.3cm;
-        padding-left: 1cm;
-        padding-right: 1cm;
-        height: 23cm;
+@media only screen and (max-width: 800px) {
+    .project_grid{
+        
     }
-    .project_lists{
-        height: 13cm;
-    }
-    .project_grid {
-        text-align: center;
-        padding-top: 5px;
-        padding-left: 10px;
-        padding-right: 10px;
-        padding-bottom: 50px;
-        height: 14cm;
+    .project_section{
+        padding-left: 1rem;
+        padding-right: 1rem;
     }
     .project1{
-        height: 10cm;
-    }
-    .project1_details{
-        display: contents;
-        width: 25cm;
-        height: 10cm;
-        position: absolute;
-        top: 58.5cm;
-        left: 2cm;
-        right: 3.3cm;
-        bottom: auto;
+        display: block;
+        text-align: center;
     }
     .project1_details > p{
-        color: gray;
-        font-size:large;
-        font-weight: 500;
+        font-size:17px;
     }
     .project2{
-        height: 10cm;
-    }
-    .project2_details{
-        display: contents;
-        width: 25cm;
-        height: 10cm;
-        position: absolute;
-        top: 58.5cm;
-        left: 2cm;
-        right: 3.3cm;
-        bottom: auto;
+        display: block;
+        text-align: center;
     }
     .project2_details > p{
-        color: gray;
-        font-size:large;
-        font-weight: 500;
+        font-size:17px;
+    }
+}
+@media screen and (max-width: 630px) {
+    .project1_image > img{
+        width: 40%;
+        height: 40%;
+    }
+    .project2_image > img{
+        width: 40%;
+        height: 40%;
+    }
+}
+@media screen and (max-width: 510px) {
+    .project_grid{
+        
     }
 }

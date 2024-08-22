@@ -11,7 +11,7 @@ const App=()=>{
     <div className="app">
       <Header/>
       <Home/>
-      <About/>
+       <About/>
       <Experience/>
       <Project/>
       <Contact/>

@@ -8,44 +8,38 @@ const Header=()=>{
     const openClick=()=>{
         setOpenMenu(!openmenu);
     };
-    const scrollToSection=(id)=>{
-        const section=document.getElementById(id);
-        if (section) {
-            section.scrollIntoView();
-            console.log(section);
-        }
-    }
+    
     return(
         <section className="Header-grid">
             <div className="header">
-                <div className="header_name"><b>Adada Lokesh.dev</b></div>
+                <div className="header_name"><b>Adada Lokesh</b></div> 
+                <div className='navbar_section'>
+                    <ul className={openmenu ? 'open' : 'close'}>
+                        <li>
+                            <a href='/' >Home</a>
+                        </li>
+                        <li>
+                            <a href="#about_container" >About</a>
+                        </li>
+                        <li>
+                            <a href='https://drive.google.com/file/d/1tzzAYX7_kDsdaryu_IPiZqu_tcAO4gAQ/view?usp=sharing'>Resume</a>
+                        </li>
+                        <li>
+                            <a href='#exp_container' >Experience</a>
+                        </li>
+                        <li>
+                            <a href='#project_container' > Projects</a>
+                        </li>
+                        <li>
+                            <a href='#contact_container' >Contact</a>
+                        </li>
+                    </ul>
+                </div>
                 <div className='open_menu'>
                     <button onClick={openClick}>
                         <FiAlignJustify />
                     </button>
-                </div> 
-                <nav>
-                    <ul className={openmenu ? "open" : ""}>
-                        <li>
-                            <a href='/' onClick={()=>scrollToSection('')}>Home</a>&nbsp;&nbsp;
-                        </li>
-                        <li>
-                            <a href='/about' onClick={()=>scrollToSection('about_container')}>About</a>&nbsp;&nbsp;
-                        </li>
-                        <li>
-                            <a href='https://drive.google.com/file/d/1tzzAYX7_kDsdaryu_IPiZqu_tcAO4gAQ/view?usp=sharing'>Resume</a>&nbsp;&nbsp;
-                        </li>
-                        <li>
-                            <a href='/Experience' onClick={()=>scrollToSection('exp_container')}>Experience</a>&nbsp;&nbsp;
-                        </li>
-                        <li>
-                            <a href='/projects' onClick={()=>scrollToSection('project_container')}> Projects</a>&nbsp;&nbsp;
-                        </li>
-                        <li>
-                            <a href='/contact' onClick={()=>scrollToSection('contact_container')}>Contact</a>&nbsp;&nbsp;
-                        </li>
-                    </ul>
-                </nav>
+                </div>
             </div>
         </section>
     )

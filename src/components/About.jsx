@@ -1,10 +1,10 @@
 import './About.css';
 const About=()=>{
     return (
-        <section className="about_container">
-             <section className='about_grid'>
+        <section className="about_grid" id="about_container">
+             <section className='about_section'>
                 <div className='about_content'>
-                    <div>
+                    <div className='about_content_image'>
                         <img src="java_Fullstack.jpg"></img>
                     </div>
                     <div className='about_me'>

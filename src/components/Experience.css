@@ -1,28 +1,65 @@
-.exp_container{
-    background-color: aliceblue;
-    padding-top: 0.5cm;
-    padding-left: 1cm;
-    padding-right: 1cm;
-    height: 13cm;
-}
 .exp_grid{
-    padding-top: 20px;
-    padding-left: 320px;
-    padding-right: 370px;
-    padding-bottom: 20px;
+    background-color: white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: auto;
 }
-.exp_heading{
+.exp_section{
+    padding-left: 30ex;
+    padding-right: 30ex;
+}
+.exp_content{
+    padding: 15px;
+    width: 100%;
+    box-sizing: border-box;
+}
+.exp_content > h2{
     text-align: center;
+    color:rgb(0, 121, 251);
+}
+.exp_company{
+    display: block;
+    width: 100%;
+    padding: 20px;
+    /* padding-left:25ex; */
+}
+.exp_company > div{
+    width: 100%;
+    /* text-align: center; */
+}
+.exp_company > div > p{
+    width: 100%;
+    width: 100%;
+    color: gray;
+    font-size:large;
+    font-weight: 500;
 }
 @media only screen and (max-width: 1300px ) {
-    .exp_container {
-        padding-top: 0.5cm;
-    padding-left: 1cm;
-    padding-right: 1cm;
-        height: auto; /* Adjust height as needed for smaller screens */
+    .exp_grid{
+        margin-top: 10px;
+        margin-bottom: 10px;
     }
-
-    .exp_grid {
-        padding: 20px; /* Adjust padding as needed for smaller screens */
+    .exp_section{
+        padding-left: 15ex;
+        padding-right: 15ex;
+    }
+}
+@media only screen and (max-width: 800px ) {
+    .exp_grid{
+         
+    }
+    .exp_section{
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    .exp_content{
+        display: block;
+        width: 100%;
+    }
+    .exp_company{
+        width: 90%;
+    }
+    .exp_company > div > p{
+        font-size:17px;
     }
 }
