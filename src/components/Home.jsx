@@ -38,7 +38,7 @@ const Home=()=>{
                         </div>
                         
                         <div className='home_content_right'>
-                            <img src="profile.jpg" alt='error' style={{borderRadius:300/2}}></img>
+                            <img src="profile.jpg" alt='error' ></img>
                         </div>
                     </div>
                     <div className='tech_stack_container'>
