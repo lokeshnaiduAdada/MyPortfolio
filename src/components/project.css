@@ -25,7 +25,7 @@
 .project1{
     display: flex;
     padding-bottom: 30px;
-    gap: 10px;
+    gap: 20px;
     width: 100%;
     justify-content: space-between;
 }
@@ -48,7 +48,7 @@
 }
 .project2{
     display: flex;
-    gap: 10px;
+    gap: 20px;
     width: 100%;
     justify-content: space-between;
 }
@@ -125,16 +125,21 @@
 }
 @media screen and (max-width: 630px) {
     .project1_image > img{
-        width: 40%;
-        height: 40%;
+        width: 250px;
+        height: 150px;
     }
     .project2_image > img{
-        width: 40%;
+        width: 50%;
         height: 40%;
     }
 }
-@media screen and (max-width: 510px) {
-    .project_grid{
-        
+@media screen and (max-width: 400px) {
+    .project1_image > img{
+        width: 180px;
+        height: 100px;
+    }
+    .project2_image > img{
+        width: 180px;
+        height: 100px;
     }
 }

@@ -2,6 +2,7 @@ import './headerstyle.css';
 import './header_gif.mp4'
 import { FiAlignJustify } from "react-icons/fi";
 import { useState } from 'react';
+import { motion } from 'framer-motion';
 
 const Header=()=>{
     const[openmenu,setOpenMenu]=useState(false);
@@ -15,24 +16,29 @@ const Header=()=>{
                 <div className="header_name"><b>Adada Lokesh</b></div> 
                 <div className='navbar_section'>
                     <ul className={openmenu ? 'open' : 'close'}>
-                        <li>
+                        <motion.li whileHover={{scale:1.1}}>
                             <a href='/' >Home</a>
-                        </li>
-                        <li>
+                        </motion.li>
+                        <motion.li
+                        whileHover={{scale:1.1}}>
                             <a href="#about_container" >About</a>
-                        </li>
-                        <li>
+                        </motion.li>
+                        <motion.li
+                        whileHover={{scale:1.1}}>
                             <a href='https://drive.google.com/file/d/1tzzAYX7_kDsdaryu_IPiZqu_tcAO4gAQ/view?usp=sharing'>Resume</a>
-                        </li>
-                        <li>
+                        </motion.li>
+                        <motion.li
+                        whileHover={{scale:1.1}}>
                             <a href='#exp_container' >Experience</a>
-                        </li>
-                        <li>
+                        </motion.li>
+                        <motion.li
+                        whileHover={{scale:1.1}}>
                             <a href='#project_container' > Projects</a>
-                        </li>
-                        <li>
+                        </motion.li>
+                        <motion.li
+                        whileHover={{scale:1.1}}>
                             <a href='#contact_container' >Contact</a>
-                        </li>
+                        </motion.li>
                     </ul>
                 </div>
                 <div className='open_menu'>
