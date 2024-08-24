@@ -56,7 +56,7 @@ const Project=()=>{
                         </div>
                         <div className='project3'>
                             <div className='project3_image'>
-                                <img src='e-mart_view.png' alt='Project3_image' ></img>
+                                <img src='e-mart_view.PNG'  alt='Project3_image' ></img>
                             </div>
                             <div className='project3_details'>
                                 <h3 style={{color:'red'}}>E-Mart Hub</h3>
