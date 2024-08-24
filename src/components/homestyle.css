@@ -93,6 +93,7 @@
         height: auto;
         text-align: center;
         width: 100%;
+        overflow-x: clip;
     }
     .home_section{
         display: block;

@@ -60,6 +60,7 @@
 @media only screen and (max-width: 800px) {
     .about_grid{
         height: auto;   
+        overflow-x: clip;
     }
     .about_section{
         display: block;

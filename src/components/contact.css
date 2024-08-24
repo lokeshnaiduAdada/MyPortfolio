@@ -108,6 +108,7 @@
 @media screen and (max-width: 420px) {
     .contact_right > form > div{
         width: 300px;
+        
     }
     .contact_right > form > div > label{
         width: 300px;

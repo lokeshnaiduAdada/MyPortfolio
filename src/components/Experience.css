@@ -45,12 +45,10 @@
     }
 }
 @media only screen and (max-width: 800px ) {
-    .exp_grid{
-         
-    }
     .exp_section{
         padding-left: 1rem;
         padding-right: 1rem;
+        overflow-x: clip;
     }
     .exp_content{
         display: block;

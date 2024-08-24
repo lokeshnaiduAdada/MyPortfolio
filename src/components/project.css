@@ -8,6 +8,7 @@
     padding-right: 30ex;
 }
 .project_content{
+    overflow-x: clip;
     display: block;
     padding: 15px;
     box-sizing: border-box;
@@ -88,7 +89,8 @@
     padding: 0.5rem;
 }
 .social_media2 > button{
-    
+    height: 2.5rem;
+    padding: 0.5rem;
 }
 @media screen and (max-width: 1300px) {
     .project_grid{
@@ -101,9 +103,6 @@
     }
 }
 @media only screen and (max-width: 800px) {
-    .project_grid{
-        
-    }
     .project_section{
         padding-left: 1rem;
         padding-right: 1rem;
@@ -134,6 +133,7 @@
     }
 }
 @media screen and (max-width: 400px) {
+    
     .project1_image > img{
         width: 180px;
         height: 100px;
