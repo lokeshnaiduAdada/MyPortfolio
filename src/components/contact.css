@@ -43,6 +43,7 @@
 }
 .contact_right > form >div{
     width: 100%;
+    text-align: center;
 }
 .contact_right >form > div>  button{
     background-color: orange;

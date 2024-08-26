@@ -24,6 +24,7 @@ const Contact=()=>{
           },
         );
     };
+    
     return(
         <motion.section
             initial={{ y: 250, opacity: 0 }}
