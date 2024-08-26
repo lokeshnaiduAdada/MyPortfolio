@@ -1,11 +1,29 @@
 import './contact.css';
+import { useRef } from 'react';
+import emailjs from '@emailjs/browser'
 import { motion } from "framer-motion"
 const Contact=()=>{
-    const clickEvent=()=>{
-        return(
-            alert("response sended")
+
+    const form = useRef();
+
+    const sendEmail = (e) => {
+      e.preventDefault();
+  
+      emailjs
+      .sendForm('service_3ep98va', 'template_y04j9dj', 
+            form.current, {
+                publicKey: 'zlzZEb_hjhRQGcOkd',
+            }
         )
-    }
+        .then(
+          (result) => {
+            alert("Response Sended...");
+          },
+          (error) => {
+            alert('FAILED...', error.text);
+          },
+        );
+    };
     return(
         <motion.section
             initial={{ y: 250, opacity: 0 }}
@@ -22,20 +40,22 @@ const Contact=()=>{
                             </p>
                         </div>
                         <div className="contact_right">
-                            <form>
+                            <form ref={form} onSubmit={sendEmail}>
                                 <div>
                                     <label>Email: </label>
-                                    <input type="email" placeholder="example@gmail.com" name="from_name" required="" ></input>
+                                    <input type="email" placeholder="example@gmail.com" name="user_email" required="" ></input>
                                 </div>
                                 <div class="each-input">
                                     <label>Subject: </label>
-                                    <input type="text" placeholder="Reaching out regarding..." name="subject" required="" ></input>
+                                    <input type="text" placeholder="Reaching out regarding..." name="user_subject" required="" ></input>
                                 </div>
                                 <div>
                                     <label>Message: </label>
-                                    <textarea placeholder="Enter your message" name="message" required="" ></textarea>
+                                    <textarea placeholder="Enter your message" name="user_message" required="" ></textarea>
                                 </div>
-                                {/* <button type="submit" onClick={clickEvent()}>Send</button> */}
+                                <div>
+                                    <motion.button whileHover={{scale:1.3}}  type="submit" >Send</motion.button>
+                                </div>
                             </form>
                         </div>
                     </div>
