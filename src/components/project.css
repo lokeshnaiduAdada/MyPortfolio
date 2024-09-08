@@ -204,6 +204,13 @@
     .project3_details > p{
         font-size:17px;
     }
+    .project4{
+        display: block;
+        text-align: center;
+    }
+    .project4_details > p{
+        font-size:17px;
+    }
 }
 @media screen and (max-width: 630px) {
     .project1_image > img{
@@ -215,6 +222,10 @@
         height: 40%;
     }
     .project3_image > img{
+        width: 50%;
+        height: 40%;
+    }
+    .project4_image > img{
         width: 50%;
         height: 40%;
     }
@@ -230,6 +241,10 @@
         height: 100px;
     }
     .project3_image > img{
+        width: 180px;
+        height: 100px;
+    }
+    .project4_image > img{
         width: 180px;
         height: 100px;
     }
