@@ -55,6 +55,7 @@
 }
 .tech_stack_backend_title{
     width: 100px;
+    text-align: center;
 }
 .hero_details{
     display: flex;

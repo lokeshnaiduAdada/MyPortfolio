@@ -1,4 +1,3 @@
-import react from 'react'
 import { FaGithub } from "react-icons/fa";
 import { TfiLinkedin } from "react-icons/tfi";
 import { BsWhatsapp } from "react-icons/bs";
@@ -79,7 +78,13 @@ const Home=()=>{
                                 <b style={{fontSize:'20px',color:"black"}}>Back-End: </b>
                             </div>
                             <div>
-                                <img src='java.svg' alt='java_logo'style={{width:50,paddingLeft:'20px'}}></img>
+                                <img src='java.svg' alt='java_logo'style={{width:50,paddingLeft:'15px'}}></img>
+                            </div>
+                            <div>
+                                <img src='spring-boot-icon.svg' alt='java_logo'style={{width:45,paddingLeft:'15px'}}></img>
+                            </div>
+                            <div>
+                                <img src='mysql-icon.svg' alt='java_logo'style={{width:50,paddingLeft:'15px'}}></img>
                             </div>
                         </motion.div>
                     </div>
