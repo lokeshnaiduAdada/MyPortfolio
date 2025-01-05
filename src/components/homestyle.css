@@ -90,7 +90,6 @@
 }
 @media only screen and (max-width: 800px) {
     .home-grid{
-        /* position: absolute; */
         height: auto;
         text-align: center;
         width: 100%;
@@ -100,6 +99,9 @@
         display: block;
         padding-left: 1rem;
         padding-right: 1rem;
+    }
+    .home {
+        padding: 0px;
     }
     .home_content{
         align-items: center;
@@ -134,5 +136,8 @@
     .home_content_right{
         width: 280px;
         height: 280px;
+    }
+    .home_content_left{
+        width: -webkit-fill-available;
     }
 }
