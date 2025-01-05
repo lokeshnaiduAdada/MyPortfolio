@@ -13,7 +13,7 @@ const Header=()=>{
     return(
         <section className="Header-grid">
             <div className="header">
-                <div className="header_name"><b>Adada Lokesh</b></div> 
+                <div className="header_name"><b>𝓐𝓭𝓪𝓭𝓪 𝓛𝓸𝓴𝓮𝓼𝓱</b></div> 
                 <div className='navbar_section'>
                     <ul className={openmenu ? 'open' : 'close'}>
                         <motion.li whileHover={{scale:1.1}}>
