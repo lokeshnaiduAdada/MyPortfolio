@@ -25,7 +25,7 @@ const Header=()=>{
                         </motion.li>
                         <motion.li
                         whileHover={{scale:1.1}}>
-                            <a href='https://drive.google.com/file/d/1tzzAYX7_kDsdaryu_IPiZqu_tcAO4gAQ/view?usp=sharing'>Resume</a>
+                            <a href='https://drive.google.com/file/d/1SDFEFwv6ZhlCrnMu10xuxUanXH8tkqC6/view?usp=drive_link'>Resume</a>
                         </motion.li>
                         <motion.li
                         whileHover={{scale:1.1}}>
