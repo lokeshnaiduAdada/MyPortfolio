@@ -33,7 +33,7 @@ const Contact=()=>{
             className="contact_grid" id='contact_container'>
             <section className="contact_section">
                 <div className='contact_content'>    
-                    <h1 className='contact_heading'>CONTACT US</h1>
+                    <h2 className='contact_heading'>CONTACT US</h2>
                     <div className="contact_me">
                         <div className="contact_left">
                             <p >

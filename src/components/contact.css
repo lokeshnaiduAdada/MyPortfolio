@@ -9,11 +9,13 @@
 }
 .contact_content{
     width: 100%;
-    padding: 15px;
+    padding: 10px;
     box-sizing: border-box;
 }
 .contact_heading{
     text-align: center;
+    margin-block-start: 0.40em;
+    margin-block-end: 0.40em;
     color:rgb(0, 121, 251);
 }
 .contact_me{
