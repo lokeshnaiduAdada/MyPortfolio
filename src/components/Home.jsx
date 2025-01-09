@@ -7,7 +7,7 @@ import './homestyle.css';
 const Home=()=>{
     return(
             <motion.section 
-                initial={{y :-200,opacity:0 }}
+                initial={{y :-120,opacity:0 }}
                 whileInView={{ opacity: 1, x: 0, y: 0 }}
                 // animate={{opacity: 1, y: 0}}
                 transition={{ duration: 0.7,type:'spring',stiffness:220}}
