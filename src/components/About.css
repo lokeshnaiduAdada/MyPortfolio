@@ -32,8 +32,10 @@
     font-size:large;
     font-weight: 500;
 }
-.about_me > h2{
+.about_grid > h2{
     color:rgb(0, 121, 251);
+    justify-content: center;
+    display: grid;
 }
 
 @media only screen and (max-width: 1300px) {
