@@ -5,12 +5,12 @@ const Experience=()=>{
     return(
         <section className="exp_grid" id="exp_container">
             <div className="exp_section">
+                <h2>EXPERIENCE</h2>
                 <motion.div 
                 initial={{opacity:0,x:-100}}
                 whileInView={{opacity:1,x:0}}
                 transition={{duration:0.7,type:'spring',stiffness:220}}
                 className="exp_content">
-                    <h2>EXPERIENCE</h2>
                     <div className='exp_company2'>
                         <div>
                             <h2 style={{color:"red",marginBlockStart:"0.50em",marginBlockEnd:"0.50em"}}>Full Stack Internship</h2>
