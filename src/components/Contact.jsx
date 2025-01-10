@@ -26,14 +26,14 @@ const Contact=()=>{
     };
 
     return(
-        <motion.section
-            initial={{ y: 250, opacity: 0 }}
-            whileInView={{ opacity: 1, x: 0, y: 0 }}
-            transition={{ duration: 0.7,type:'spring',stiffness:220,bounce:'0.6' }}       
-            className="contact_grid" id='contact_container'>
+        <section className="contact_grid" id='contact_container'>
             <section className="contact_section">
-                <div className='contact_content'>    
-                    <h2 className='contact_heading'>CONTACT US</h2>
+                <h2 className='contact_heading'>CONTACT US</h2>
+                <motion.div 
+                    initial={{ y: 250, opacity: 0 }}
+                    whileInView={{ opacity: 1, x: 0, y: 0 }}
+                    transition={{ duration: 0.7,type:'spring',stiffness:220,bounce:'0.6' }}
+                    className='contact_content'>    
                     <div className="contact_me">
                         <div className="contact_left">
                             <p >
@@ -60,9 +60,9 @@ const Contact=()=>{
                             </form>
                         </div>
                     </div>
-                </div>
+                </motion.div>
             </section>
-        </motion.section>
+        </section>
     )
 }
 export default Contact;
